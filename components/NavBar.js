@@ -9,7 +9,7 @@ export const NavBar = () => {
           <span class="mr-2 w-8">
             <img src="/Goodfarms Logo.svg" alt="GoodFarms Logo" />
           </span>
-          GoodFarms Trading Corporation
+          GoodFarms Trading Corp.
         </a>
         <input type="checkbox" class="peer hidden" id="navbar-open" achecked />
         <label
