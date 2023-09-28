@@ -39,6 +39,10 @@ body {
   color: #fcd34d; /* White text color */
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #fcd34d !important;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
