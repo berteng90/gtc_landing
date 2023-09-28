@@ -1,9 +1,10 @@
-import Image from "next/image";
-
 export const Hero = () => {
   return (
     <div>
       <div class="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
+        <span className="absolute left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-amber-300 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+        <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-green-400 blur-xl opacity-80"></span>
+
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-3xl text-center">
             <h1 class="font-bold mt-5 text-3xl  leading-tight text-gray-700 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
