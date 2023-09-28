@@ -24,8 +24,8 @@ export const Footer = () => {
             Bukidnon, PH
           </div>
         </div>
-        <div class="">
-          <div class="mt-4 mb-2 font-medium xl:mb-4">About</div>
+        <div class="about">
+          <div class="mt-4 mb-2 font-medium xl:mb-4">Company</div>
           <nav aria-label="Footer Navigation" class="text-gray-500">
             <ul class="space-y-3">
               <li>
@@ -40,7 +40,29 @@ export const Footer = () => {
               </li>
               <li>
                 <a class="hover:text-green-500 hover:underline" href="#">
-                  Contact
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="support">
+          <div class="mt-4 mb-2 font-medium xl:mb-4">Support</div>
+          <nav aria-label="Footer Navigation" class="text-gray-500">
+            <ul class="space-y-3">
+              <li>
+                <a class="hover:text-green-500 hover:underline" href="#">
+                  Send a Message
+                </a>
+              </li>
+              <li>
+                <a class="hover:text-green-500 hover:underline" href="#">
+                  Help Resources
+                </a>
+              </li>
+              <li>
+                <a class="hover:text-green-500 hover:underline" href="#">
+                  Request a Quote
                 </a>
               </li>
             </ul>
