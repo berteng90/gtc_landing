@@ -25,7 +25,7 @@ export const Hero = () => {
                     fill="currentColor"
                   />
                 </svg>
-                Improving Farmer Lives
+                Improving Farmer Lives.
               </span>
             </h1>
             <p class="mx-auto mt-12 max-w-md leading-7 text-gray-600">
@@ -37,11 +37,11 @@ export const Hero = () => {
               <a
                 href="#"
                 title=""
-                class="rounded-xl bg-green-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600"
+                class="rounded-xl bg-green-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
               >
                 Get Started
               </a>
-              <div class="-scale-x-100 absolute left-0 -bottom-10 hidden h-10 w-10 -rotate-12 text-blue-600 md:inline-flex">
+              <div class="-scale-x-100 absolute left-0 -bottom-10 hidden h-10 w-10 -rotate-12 text-gray-500 md:inline-flex">
                 <svg
                   viewBox="0 0 82 35"
                   fill="none"

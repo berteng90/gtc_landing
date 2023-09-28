@@ -39,7 +39,7 @@ export const NavBar = () => {
           <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-amber-300 focus:ring-offset-2"
                 href="#"
               >
                 Services
@@ -47,7 +47,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-amber-300 focus:ring-offset-2"
                 href="#"
               >
                 Careers
@@ -55,7 +55,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-amber-300 focus:ring-offset-2"
                 href="#"
               >
                 About
@@ -63,7 +63,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+                class="rounded text-gray-500 transition focus:outline-none focus:ring-1 focus:ring-amber-300 focus:ring-offset-2"
                 href="#"
               >
                 Contact
@@ -75,14 +75,14 @@ export const NavBar = () => {
             <a
               href="#"
               title=""
-              class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none text-gray-500 focus:ring-1 focus:ring-blue-700 focus:ring-offset-2 hover:text-opacity-50"
+              class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none text-gray-500 focus:ring-1 focus:ring-amber-300 focus:ring-offset-2 hover:text-opacity-50"
             >
               Log in
             </a>
             <a
               href="#"
               title=""
-              class="whitespace-nowrap rounded-xl bg-green-500 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2 hover:bg-blue-600"
+              class="whitespace-nowrap rounded-xl bg-green-500 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
             >
               Get Started
             </a>
