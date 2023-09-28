@@ -29,10 +29,10 @@ export const Hero = () => {
                 Improving Farmer Lives.
               </span>
             </h1>
-            <p class="mx-auto mt-12 max-w-md leading-7 text-gray-600">
+            {/* <p class="mx-auto mt-12 max-w-md leading-7 text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
               deleniti perferendis magnam.
-            </p>
+            </p> */}
 
             <div class="group relative mt-10 inline-flex">
               <a
