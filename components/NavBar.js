@@ -75,13 +75,6 @@ export const NavBar = () => {
             <a
               href="#"
               title=""
-              class="whitespace-nowrap rounded font-medium transition-all duration-200 focus:outline-none text-gray-500 focus:ring-1 focus:ring-amber-300 focus:ring-offset-2 hover:text-opacity-50"
-            >
-              Log in
-            </a>
-            <a
-              href="#"
-              title=""
               class="whitespace-nowrap rounded-xl bg-green-500 px-5 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
             >
               Get Started
