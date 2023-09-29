@@ -13,8 +13,11 @@ export const Statistics = () => {
 
         <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-y-4 gap-x-8 text-center sm:mt-12 sm:text-left md:grid-cols-3">
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-2xl font-black text-green-500 sm:text-5xl">
-              20+ Years
+            <p class="relative text-3xl font-black text-green-500 sm:text-5xl">
+              <div className="flex-col flex-nowrap">
+                <div>20+</div>
+                <div className="text-2xl">Years in Service</div>
+              </div>
             </p>
             <p class="relative mt-5 text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -23,8 +26,11 @@ export const Statistics = () => {
           </div>
 
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-2xl font-black text-green-500 sm:text-5xl">
-              5,000+ Families
+            <p class="relative text-3xl font-black text-green-500 sm:text-5xl">
+              <div className="flex-col flex-nowrap">
+                <div>5k+</div>
+                <div className="text-2xl">Families</div>
+              </div>
             </p>
             <p class="relative mt-5 text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -33,8 +39,11 @@ export const Statistics = () => {
           </div>
 
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-2xl font-black text-green-500 sm:text-5xl">
-              6.5M+ Sold
+            <p class="relative text-    xl font-black text-green-500 sm:text-5xl">
+              <div className="flex-col flex-nowrap">
+                <div>6.5m+</div>
+                <div className="text-2xl">Products Sold</div>
+              </div>
             </p>
             <p class="relative mt-5 text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
