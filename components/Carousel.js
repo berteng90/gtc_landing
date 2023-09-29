@@ -38,31 +38,31 @@ export const Carousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./farmer-sitting.jpeg" />
+          <img src="./bombom.jpg" />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

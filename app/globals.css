@@ -36,11 +36,11 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fcd34d; /* White text color */
+  color: #22c55e;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fcd34d !important;
+  background-color: #22c55e !important;
 }
 
 .swiper-slide {
@@ -72,7 +72,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #fcd34d;
+  color: #22c55e;
 }
 
 .autoplay-progress svg {
@@ -84,7 +84,7 @@ body {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: #fcd34d;
+  stroke: #22c55e;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
