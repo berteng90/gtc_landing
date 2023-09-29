@@ -8,7 +8,7 @@ export const Branches = () => {
           <div>
             <div class="rounded bg-amber-300 p-8 ">
               <h1 class="text-green-500 ">
-                Trusted by Farmers All Over
+                Trusted by Farmers All-Over
                 <span className="font-bold"> Mindanao!</span>
               </h1>
             </div>
