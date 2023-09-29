@@ -13,48 +13,48 @@ export const Statistics = () => {
 
         <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-y-4 gap-x-8 text-center sm:mt-12 sm:text-left md:grid-cols-3">
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-3xl font-black text-green-500 sm:text-5xl">
+            <div class="relative text-3xl font-black text-green-500 sm:text-5xl">
               <div className="flex flex-col flex-nowrap lg:text-center">
                 <div>20+</div>
                 <div className="flex-1 text-2xl">Years in Service</div>
               </div>
-            </p>
-            <p class="relative mt-5 text-gray-600">
+            </div>
+            <div class="relative mt-5 text-gray-600">
               <div className="flex-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores doloremque vel
               </div>
-            </p>
+            </div>
           </div>
 
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-3xl font-black text-green-500 sm:text-5xl">
+            <div class="relative text-3xl font-black text-green-500 sm:text-5xl">
               <div className="flex-col flex-nowrap text-center">
                 <div>5k+</div>
                 <div className="text-2xl">Families</div>
               </div>
-            </p>
-            <p class="relative mt-5 text-gray-600">
+            </div>
+            <div class="relative mt-5 text-gray-600">
               <div className="flex-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores doloremque vel
               </div>
-            </p>
+            </div>
           </div>
 
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
-            <p class="relative text-3xl font-black text-green-500 sm:text-5xl">
+            <div class="relative text-3xl font-black text-green-500 sm:text-5xl">
               <div className="flex-col flex-nowrap text-center">
                 <div>6.5m+</div>
                 <div className="text-2xl">Products Sold</div>
               </div>
-            </p>
-            <p class="relative mt-5 text-gray-600">
+            </div>
+            <div class="relative mt-5 text-gray-600">
               <div className="flex ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores doloremque vel
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </div>
