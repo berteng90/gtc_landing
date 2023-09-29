@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +18,7 @@ export const Carousel = () => {
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    progressContent.current.textContent = `${Math.ceil(time / 5000)}s`;
   };
   return (
     <>
@@ -38,31 +38,85 @@ export const Carousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./bombom.jpg" />
+          <Image
+            width={500}
+            height={500}
+            src="/bombom.jpg"
+            quality={100}
+            alt="Picture of GTC Don Carlos"
+          />
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

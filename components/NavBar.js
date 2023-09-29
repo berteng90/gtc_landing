@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const NavBar = () => {
   return (
     <div class="overflow-x-hidden">
@@ -7,7 +9,12 @@ export const NavBar = () => {
           class="flex items-center whitespace-nowrap text-xl font-black"
         >
           <span class="mr-2 w-8">
-            <img src="/Goodfarms Logo.svg" alt="GoodFarms Logo" />
+            <Image
+              width={50}
+              height={50}
+              src="/Goodfarms Logo.svg"
+              alt="GoodFarms Logo"
+            />
           </span>
           GoodFarms Trading Corp.
         </a>

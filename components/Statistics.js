@@ -41,7 +41,6 @@ export const Statistics = () => {
               </div>
             </div>
           </div>
-
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
             <div class="relative text-3xl font-black text-green-500 sm:text-5xl">
               <div className="flex-col flex-nowrap text-center">
