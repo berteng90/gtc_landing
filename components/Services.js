@@ -1,79 +1,219 @@
+"use client";
+import { useState } from "react";
+
 export const Services = () => {
-  const Services = [
-    {
-      title: "Retail & Wholesale of Agri-Products",
-      desc: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-        erat quam. Integer porttitor ante in odio accumsan, in tempus sapien
-        vulputate. Donec pretium quis risus at mollis. Suspendisse et metus
-        quis nisl vulputate pharetra. Maecenas rutrum est nunc. Aenean in
-        facilisis arcu. Sed consequat metus vel lorem consequat, in tempus
-        mauris dictum.`,
-    },
-    {
-      title: "Mechanical Drying",
-      desc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-        erat quam. Integer porttitor ante in odio accumsan, in tempus sapien
-        vulputate. Donec pretium quis risus at mollis. Suspendisse et metus
-        quis nisl vulputate pharetra. Maecenas rutrum est nunc. Aenean in
-        facilisis arcu. Sed consequat metus vel lorem consequat, in tempus
-        mauris dictum.`,
-    },
-  ];
+  const [activeTab, setActiveTab] = useState(1);
 
+  const handleTabClick = (tabNumber) => {
+    setActiveTab(tabNumber);
+  };
   return (
-    <section class="px-4 py-24 mx-auto max-w-7xl">
-      <div class="mb-5 text-center">
-        <h2 class="lg:text-4xl text-green-500 font-bold sm:text-3xl dark:text-gray-200">
-          Services We Offer
-        </h2>
-      </div>
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="relative p-6 md:p-16">
+        <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
+          <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
+            <h2 className="text-2xl text-green-500 font-bold sm:text-3xl">
+              Services We Offer
+            </h2>
 
-      <div class="mt-10 grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-        <div>
-          <h3 class="mb-4 lg:text-2xl font-bold tracking-tight text-center text-green-500 md:leading-tight sm:text-left md:text-2xl">
-            Retail & Wholesale of Agri-Products
-          </h3>
-          <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-            erat quam. Integer porttitor ante in odio accumsan, in tempus sapien
-            vulputate. Donec pretium quis risus at mollis. Suspendisse et metus
-            quis nisl vulputate pharetra. Maecenas rutrum est nunc. Aenean in
-            facilisis arcu. Sed consequat metus vel lorem consequat, in tempus
-            mauris dictum.
-          </p>
-          <a
-            href="#"
-            title=""
-            class="whitespace-nowrap rounded-xl bg-green-500 px-3 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
-          >
-            Learn More
-          </a>
+            <nav
+              className="grid gap-4 mt-5 md:mt-10"
+              aria-label="Tabs"
+              role="tablist"
+            >
+              <button
+                type="button"
+                className={`text-left   p-4 md:p-5 rounded-xl  ${
+                  activeTab === 1 ? "bg-green-500" : "hover:bg-gray-200"
+                }`}
+                onClick={() => handleTabClick(1)}
+                id="tabs-with-card-item-1"
+                data-hs-tab="#tabs-with-card-1"
+                aria-controls="tabs-with-card-1"
+                role="tab"
+              >
+                <span className="flex">
+                  <svg
+                    className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 "
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z" />
+                    <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  </svg>
+                  <span className="grow ml-6">
+                    <span
+                      className={
+                        activeTab === 1
+                          ? "block text-lg font-semibold text-white"
+                          : "block text-lg font-semibold text-gray-800"
+                      }
+                    >
+                      Retail & Wholesale
+                    </span>
+                    <span
+                      className={
+                        activeTab === 1
+                          ? "block mt-1 text-white "
+                          : "block mt-1 text-gray-600 "
+                      }
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis et erat quam.
+                    </span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                className={`  text-left  p-4 md:p-5 rounded-xl  ${
+                  activeTab === 2 ? "bg-green-500" : "hover:bg-gray-200"
+                }`}
+                onClick={() => handleTabClick(2)}
+                id="tabs-with-card-item-2"
+                data-hs-tab="#tabs-with-card-2"
+                aria-controls="tabs-with-card-2"
+                role="tab"
+              >
+                <span className="flex">
+                  <svg
+                    className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 "
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07Z"
+                    />
+                  </svg>
+                  <span className="grow ml-6">
+                    <span
+                      className={
+                        activeTab === 2
+                          ? "block text-lg font-semibold text-white"
+                          : "block text-lg font-semibold text-gray-800"
+                      }
+                    >
+                      Mechanical Drying
+                    </span>
+                    <span
+                      className={
+                        activeTab === 2
+                          ? "block mt-1 text-white "
+                          : "block mt-1 text-gray-600 "
+                      }
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis et erat quam.
+                    </span>
+                  </span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                className={`  text-left  p-4 md:p-5 rounded-xl  ${
+                  activeTab === 3 ? "bg-green-500" : "hover:bg-gray-200"
+                }`}
+                onClick={() => handleTabClick(3)}
+                id="tabs-with-card-item-3"
+                data-hs-tab="#tabs-with-card-3"
+                aria-controls="tabs-with-card-3"
+                role="tab"
+              >
+                <span className="flex">
+                  <svg
+                    className="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 "
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1H6.374z" />
+                  </svg>
+                  <span className="grow ml-6">
+                    <span
+                      className={
+                        activeTab === 3
+                          ? "block text-lg font-semibold text-white"
+                          : "block text-lg font-semibold text-gray-800"
+                      }
+                    >
+                      Baligya Balut
+                    </span>
+                    <span
+                      className={
+                        activeTab === 3
+                          ? "block mt-1 text-white "
+                          : "block mt-1 text-gray-600 "
+                      }
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis et erat quam.
+                    </span>
+                  </span>
+                </span>
+              </button>
+            </nav>
+          </div>
+          <div className="lg:col-span-6">
+            <div className="relative">
+              <div>
+                <div
+                  id="tabs-with-card-1"
+                  className={activeTab === 1 ? "" : "hidden"}
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-1"
+                >
+                  <img
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                    alt="Image Description"
+                  />
+                </div>
+
+                <div
+                  id="tabs-with-card-2"
+                  className={activeTab === 2 ? "" : "hidden"}
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-2"
+                >
+                  <img
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                    alt="Image Description"
+                  />
+                </div>
+
+                <div
+                  id="tabs-with-card-3"
+                  className={activeTab === 3 ? "" : "hidden"}
+                  role="tabpanel"
+                  aria-labelledby="tabs-with-card-item-3"
+                >
+                  <img
+                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
+                    src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                    alt="Image Description"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="w-full h-full py-48 bg-gray-200"></div>
-      </div>
-      <div class="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24">
-        <div class="order-none md:order-2 ">
-          <h3 class="mb-4 lg:text-2xl font-extrabold tracking-tight text-center text-green-500 md:leading-tight sm:text-left md:text-2xl">
-            Mechanical Drying
-          </h3>
-          <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et
-            erat quam. Integer porttitor ante in odio accumsan, in tempus sapien
-            vulputate. Donec pretium quis risus at mollis. Suspendisse et metus
-            quis nisl vulputate pharetra. Maecenas rutrum est nunc. Aenean in
-            facilisis arcu. Sed consequat metus vel lorem consequat, in tempus
-            mauris dictum.
-          </p>
-          <a
-            href="#"
-            title=""
-            class="whitespace-nowrap rounded-xl bg-green-500 px-3 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
-          >
-            Learn More
-          </a>
+
+        <div className="absolute inset-0 grid grid-cols-12 w-full h-full">
+          <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"></div>
         </div>
-        <div class="w-full h-full py-48 bg-gray-200"></div>
       </div>
-    </section>
+    </div>
   );
 };
