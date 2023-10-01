@@ -46,7 +46,7 @@ export const NavBar = () => {
           <ul class="flex w-full flex-col items-center space-y-2 lg:flex-row lg:justify-center lg:space-y-0">
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition hover:text-green-500 focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
+                class="rounded text-gray-600 transition hover:text-green-500 focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
                 href="#"
               >
                 Services
@@ -54,7 +54,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
+                class="rounded text-gray-600 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
                 href="#"
               >
                 Careers
@@ -62,7 +62,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
+                class="rounded text-gray-600 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
                 href="#"
               >
                 About
@@ -70,7 +70,7 @@ export const NavBar = () => {
             </li>
             <li class="lg:mr-12">
               <a
-                class="rounded text-gray-500 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
+                class="rounded text-gray-600 transition hover:text-green-500  focus:text-green-500 focus:outline-none focus:ring-1 focus:ring-amber-300"
                 href="#"
               >
                 Contact

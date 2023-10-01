@@ -2,7 +2,7 @@ export const Statistics = () => {
   return (
     <section class="relative overflow-hidden bg-gray-100">
       <img
-        class="absolute top-0 h-full w-full object-cover object-center opacity-30"
+        class="absolute top-0 h-full w-full object-cover object-center "
         src="/farmer-sitting.jpeg"
       />
 
@@ -14,7 +14,7 @@ export const Statistics = () => {
         <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-y-4 gap-x-8 text-center sm:mt-12 sm:text-left md:grid-cols-3">
           <div class="bg-white/10 relative mb-3 rounded-3xl border px-12 py-10 text-left shadow backdrop-blur-lg lg:px-12">
             <div class="relative text-3xl font-black text-green-500 sm:text-5xl">
-              <div className="flex flex-col flex-nowrap lg:text-center">
+              <div className="flex flex-col flex-nowrap text-center">
                 <div>20+</div>
                 <div className="flex-1 text-2xl">Years in Service</div>
               </div>

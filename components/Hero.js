@@ -7,7 +7,7 @@ export const Hero = () => {
 
         <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-3xl text-center">
-            <h1 class="font-bold mt-5 text-3xl  leading-tight text-gray-700 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
+            <h1 class="font-bold mt-5 text-3xl  leading-tight text-gray-600 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight">
               Supporting <br class="sm:hidden" />
               Agri Needs,
               <span class="relative inline-flex justify-center whitespace-nowrap font-bold text-transparent bg-clip-text bg-gradient-to-br from-amber-400 from-20% via-green-500 via-30% to-amber-300">

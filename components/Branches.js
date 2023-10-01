@@ -2,7 +2,7 @@ import { Carousel } from "./Carousel";
 
 export const Branches = () => {
   return (
-    <div class="mx-auto  flex max-w-lg flex-col px-4 py-20 lg:max-w-screen-xl lg:flex-row">
+    <div class="mx-auto  flex max-w-lg flex-col px-4 py-20 lg:max-w-screen-xl lg:flex-row ">
       <div class="mb-10 max-w-lg lg:mb-0 lg:pr-16 xl:pr-20">
         <div class="mb-10 text-4xl text-green-500 font-light">
           <div>
