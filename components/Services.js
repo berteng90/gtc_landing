@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 export const Services = () => {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -173,9 +173,12 @@ export const Services = () => {
                   role="tabpanel"
                   aria-labelledby="tabs-with-card-item-1"
                 >
-                  <img
-                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                    src="https://images.unsplash.com/photo-1605629921711-2f6b00c6bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                  <Image
+                    className="shadow-xl shadow-gray-600 rounded-xl"
+                    width={987}
+                    height={1220}
+                    quality={100}
+                    src={"/farmer-sitting.jpeg"}
                     alt="Image Description"
                   />
                 </div>
@@ -186,9 +189,12 @@ export const Services = () => {
                   role="tabpanel"
                   aria-labelledby="tabs-with-card-item-2"
                 >
-                  <img
-                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                    src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                  <Image
+                    className="shadow-xl shadow-gray-600 rounded-xl"
+                    width={987}
+                    height={1220}
+                    quality={100}
+                    src={"/bombom.jpg"}
                     alt="Image Description"
                   />
                 </div>
@@ -199,9 +205,12 @@ export const Services = () => {
                   role="tabpanel"
                   aria-labelledby="tabs-with-card-item-3"
                 >
-                  <img
-                    className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                    src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&h=1220&q=80"
+                  <Image
+                    className="shadow-xl shadow-gray-600 rounded-xl"
+                    width={987}
+                    height={1220}
+                    quality={100}
+                    src={"/farmer-sitting.jpeg"}
                     alt="Image Description"
                   />
                 </div>
