@@ -52,12 +52,12 @@ export const Footer = () => {
             <ul class="space-y-3">
               <li>
                 <a class="hover:text-green-500 hover:underline" href="#">
-                  Send a Message
+                  FAQ
                 </a>
               </li>
               <li>
                 <a class="hover:text-green-500 hover:underline" href="#">
-                  Help Resources
+                  Send a Message
                 </a>
               </li>
               <li>
