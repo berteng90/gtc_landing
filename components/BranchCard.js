@@ -28,7 +28,7 @@ export const BranchCard = ({ branchName, branchLocation }) => {
               </g>
             </g>
           </svg>
-          <p className="mt-2 text-center text-sm text-gray-800">
+          <p className="mt-2 text-center text-md text-gray-800">
             {branchLocation}
           </p>
         </div>

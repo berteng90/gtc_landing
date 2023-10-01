@@ -59,7 +59,7 @@ export const Carousel = ({ setCurrentBranch }) => {
         centeredSlides={true}
         onSlideChange={handleSlideChange}
         autoplay={{
-          delay: 3500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         pagination={{
