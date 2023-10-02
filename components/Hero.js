@@ -2,6 +2,15 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => {
+  const heroVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { delay: 0.1, duration: 1.3 },
+    },
+  };
   return (
     <div className="">
       <div className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
@@ -11,9 +20,9 @@ export const Hero = () => {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.1, duration: 1.3 }}
+              variants={heroVariants}
+              initial="hidden"
+              animate="visible"
               className="font-bold mt-5 text-3xl  leading-tight text-gray-600 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight"
             >
               Supporting Agri Needs,

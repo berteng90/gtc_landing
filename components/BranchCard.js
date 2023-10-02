@@ -1,6 +1,6 @@
 export const BranchCard = ({ branchName, branchLocation }) => {
   return (
-    <div className="flex flex-col bg-white border shadow-sm rounded-xl ">
+    <div className="flex flex-col bg-gray-100 border shadow-sm rounded-xl ">
       <div className="p-4 md:p-5">
         <h3 className="text-lg text-center font-bold text-gray-600">
           {branchName}
