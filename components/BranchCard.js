@@ -23,8 +23,8 @@ export const BranchCard = ({ branchName, branchLocation }) => {
     if (isInView) {
       mainControls.start("visible");
     } else {
+      mainControls.start("hidden");
     }
-    console.log(isInView);
   }, [isInView]);
 
   return (

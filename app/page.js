@@ -5,16 +5,19 @@ import { Branches } from "@/components/Branches";
 import { Statistics } from "@/components/Statistics";
 import { Services } from "@/components/Services";
 import { News } from "@/components/News";
+
 export default function Home() {
   return (
-    <main className="w-full h-full overflow-hidden">
+    <div className="flex flex-col min-h-screen">
       <NavBar />
-      <Hero />
-      <Branches />
-      <Statistics />
-      <Services />
-      <News />
+      <main className="flex-grow">
+        <Hero />
+        <Branches />
+        <Statistics />
+        <Services />
+        <News />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }

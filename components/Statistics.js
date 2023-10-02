@@ -1,6 +1,6 @@
 export const Statistics = () => {
   return (
-    <section className="relative overflow-hidden bg-gray-100 py-12 sm:py-16 lg:py-20">
+    <section className="flex mx-auto relative overflow-hidden bg-gray-100 py-12 sm:py-16 lg:py-20 lg:max-w-screen-xl">
       <div className="absolute h-72 w-72 scale-125 -right-8 -bottom-10">
         <div className="absolute h-60 w-60 rounded-2xl border-4 border-amber-300"></div>
         <div className="absolute h-60 w-60 translate-x-3 translate-y-3 rounded-2xl border-4 border-amber-300"></div>
