@@ -1,7 +1,40 @@
+"use client";
+import { useState, useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+
 export const BranchCard = ({ branchName, branchLocation }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const mainControls = useAnimation();
+
+  const textVariant = {
+    hidden: {
+      opacity: 0,
+      y: 75,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeIn" },
+    },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    } else {
+    }
+    console.log(isInView);
+  }, [isInView]);
+
   return (
-    <div className="flex flex-col bg-gray-100 border shadow-sm rounded-xl ">
-      <div className="p-4 md:p-5">
+    <div ref={ref} className="flex flex-col  border shadow-sm rounded-xl ">
+      <motion.div
+        variants={textVariant}
+        initial="hidden"
+        animate={mainControls}
+        className="p-4 md:p-5"
+      >
         <h3 className="text-lg text-center font-bold text-gray-600">
           {branchName}
         </h3>
@@ -32,7 +65,7 @@ export const BranchCard = ({ branchName, branchLocation }) => {
             {branchLocation}
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
