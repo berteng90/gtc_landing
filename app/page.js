@@ -8,16 +8,14 @@ import { News } from "@/components/News";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <main className="flex flex-col overflow-hidden">
       <NavBar />
-      <main className="flex-grow">
-        <Hero />
-        <Branches />
-        <Statistics />
-        <Services />
-        <News />
-      </main>
+      <Hero />
+      <Branches />
+      <Statistics />
+      <Services />
+      <News />
       <Footer />
-    </div>
+    </main>
   );
 }

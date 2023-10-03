@@ -12,7 +12,7 @@ export const Hero = () => {
     },
   };
   return (
-    <div className="">
+    <div className="max-w-[85rem] mx-auto">
       <div className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-green-400 blur-xl opacity-80"></span>
         <span className="absolute left-4 top-12 w-24 h-24 rounded-3xlrotate-90 skew-x-12 rounded-3xl bg-amber-300 blur-xl"></span>
