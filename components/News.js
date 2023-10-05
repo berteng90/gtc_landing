@@ -1,4 +1,15 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+
 export const News = () => {
+  const blogVariant = {
+    hidden: { opacity: 0, x: "-50vw" },
+    visible: { opacity: 1, x: 0 },
+    normal: { scale: 1 },
+    transformed: { scale: 1.05 },
+  };
+
   return (
     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
@@ -12,14 +23,24 @@ export const News = () => {
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
-        <a
-          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+        <motion.a
+          variants={blogVariant}
+          initial={"normal"}
+          animate={"visible"}
+          whileHover={"transformed"}
+          onHoverStart={(e) => {
+            console.log("Hover Start");
+          }}
+          onHoverEnd={(e) => {
+            console.log("Hover End");
+          }}
+          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
           <div className="aspect-w-16 aspect-h-9">
             <img
-              className="w-full object-cover rounded-t-xl"
-              src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+              className="w-full h-96 object-cover rounded-t-xl"
+              src="/images/palawan/palawan.jpg"
               alt="Image Description"
             />
           </div>
@@ -28,19 +49,28 @@ export const News = () => {
               September 29, 2023
             </p>
             <h3 className="mt-2 text-lg font-medium text-gray-800 group-hover:text-green-500 ">
-              Sustainable Farming: Full Send
+              GoodFarms, CB Andrew, & Dealer's Palawan Trip
             </h3>
           </div>
-        </a>
+        </motion.a>
 
-        <a
-          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+        <motion.a
+          variants={blogVariant}
+          initial={"normal"}
+          whileHover={"transformed"}
+          onHoverStart={(e) => {
+            console.log("Hover Start");
+          }}
+          onHoverEnd={(e) => {
+            console.log("Hover End");
+          }}
+          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
           <div className="aspect-w-16 aspect-h-9">
             <img
-              className="w-full object-cover rounded-t-xl"
-              src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3465&q=80"
+              className="w-full h-96 object-cover rounded-t-xl"
+              src="/images/palawan/palawan2.jpg"
               alt="Image Description"
             />
           </div>
@@ -52,16 +82,25 @@ export const News = () => {
               What GoodFarms really is about
             </h3>
           </div>
-        </a>
+        </motion.a>
 
-        <a
-          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+        <motion.a
+          variants={blogVariant}
+          initial={"normal"}
+          whileHover={"transformed"}
+          onHoverStart={(e) => {
+            console.log("Hover Start");
+          }}
+          onHoverEnd={(e) => {
+            console.log("Hover End");
+          }}
+          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
           <div className="aspect-w-16 aspect-h-9">
             <img
-              className="w-full object-cover rounded-t-xl"
-              src="https://images.unsplash.com/photo-1668863699009-1e3b4118675d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80"
+              className="w-full h-96 object-cover rounded-t-xl"
+              src="/images/palawan/palawan3.jpg"
               alt="Image Description"
             />
           </div>
@@ -73,16 +112,25 @@ export const News = () => {
               Should Product Owners think like entrepreneurs?
             </h3>
           </div>
-        </a>
+        </motion.a>
 
-        <a
-          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+        <motion.a
+          variants={blogVariant}
+          initial={"normal"}
+          whileHover={"transformed"}
+          onHoverStart={(e) => {
+            console.log("Hover Start");
+          }}
+          onHoverEnd={(e) => {
+            console.log("Hover End");
+          }}
+          className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
           <div className="aspect-w-16 aspect-h-9">
             <img
-              className="w-full object-cover rounded-t-xl"
-              src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80"
+              className="w-full h-96 object-cover rounded-t-xl"
+              src="/images/palawan/palawan4.jpg"
               alt="Image Description"
             />
           </div>
@@ -94,11 +142,11 @@ export const News = () => {
               Announcing Farming Strategies: Ready-to-use guidelines
             </h3>
           </div>
-        </a>
+        </motion.a>
       </div>
 
       <div className="text-center">
-        <div className="inline-block bg-white border shadow-sm rounded-full dark:bg-slate-900 dark:border-gray-800">
+        <div className="inline-block bg-white border shadow-sm rounded-full ">
           <div className="py-3 px-4 flex items-center gap-x-2">
             <p className="text-gray-600">Want to read more?</p>
             <a

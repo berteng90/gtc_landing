@@ -147,7 +147,7 @@ export const Services = () => {
                           : "block text-lg font-semibold text-gray-800"
                       }
                     >
-                      Baligya Balut
+                      Placeholder Service
                     </span>
                     <span
                       className={

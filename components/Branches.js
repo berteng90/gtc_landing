@@ -7,35 +7,35 @@ import { BranchCard } from "./BranchCard";
 const branches = [
   {
     branch: "GTC Don Carlos",
-    location: "Purok 11 Sur, Don Carlos, Bukidnon 8712",
+    location: "Purok 11 Sur, Don Carlos, Bukidnon",
   },
   {
     branch: "GTC Maramag",
-    location: "Maramag, Bukidnon 8714",
+    location: "Purok-1 South Poblacion, Maramag, Bukidnon",
   },
   {
     branch: "GTC Quezon",
-    location: "Quezon, Bukidnon 8714",
+    location: "Quezon, Bukidnon",
   },
   {
     branch: "GTC Tablon",
-    location: "Tablon, Cagayan De Oro 8714",
+    location: "Tablon, Cagayan De Oro",
   },
   {
     branch: "GTC Wao",
-    location: "Wao, Lanao Del Sur 8714",
+    location: "Wao, Lanao Del Sur",
   },
   {
     branch: "GTC Kadingilan",
-    location: "Kadingilan, Bukidnon 8714",
+    location: "Kadingilan, Bukidnon",
   },
   {
     branch: "GTC Kibawe",
-    location: "Kibawe, Bukidnon 8714",
+    location: "Kibawe, Bukidnon",
   },
   {
     branch: "GTC Aglayan",
-    location: "Aglayan, Malaybalay, Bukidnon 8714",
+    location: "Purok-4B Aglayan, Malaybalay, Bukidnon",
   },
 ];
 
