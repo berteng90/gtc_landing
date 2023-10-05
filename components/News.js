@@ -28,12 +28,6 @@ export const News = () => {
           initial={"normal"}
           animate={"visible"}
           whileHover={"transformed"}
-          onHoverStart={(e) => {
-            console.log("Hover Start");
-          }}
-          onHoverEnd={(e) => {
-            console.log("Hover End");
-          }}
           className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
@@ -58,12 +52,6 @@ export const News = () => {
           variants={blogVariant}
           initial={"normal"}
           whileHover={"transformed"}
-          onHoverStart={(e) => {
-            console.log("Hover Start");
-          }}
-          onHoverEnd={(e) => {
-            console.log("Hover End");
-          }}
           className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
@@ -88,12 +76,6 @@ export const News = () => {
           variants={blogVariant}
           initial={"normal"}
           whileHover={"transformed"}
-          onHoverStart={(e) => {
-            console.log("Hover Start");
-          }}
-          onHoverEnd={(e) => {
-            console.log("Hover End");
-          }}
           className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
@@ -118,12 +100,6 @@ export const News = () => {
           variants={blogVariant}
           initial={"normal"}
           whileHover={"transformed"}
-          onHoverStart={(e) => {
-            console.log("Hover Start");
-          }}
-          onHoverEnd={(e) => {
-            console.log("Hover End");
-          }}
           className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition "
           href="#"
         >
