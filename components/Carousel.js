@@ -1,8 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,11 +11,10 @@ import "swiper/css/navigation";
 
 import "../app/globals.css";
 
-// import required modules
+//Import Swiper Modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export const Carousel = ({ setCurrentBranch }) => {
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
 

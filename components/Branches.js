@@ -97,7 +97,15 @@ export const Branches = () => {
           />
         </div>
       </div>
-      <Carousel setCurrentBranch={setCurrentBranch} />
+      <motion.div
+        ref={ref}
+        variants={textVariant}
+        initial="hidden"
+        animate={mainControls}
+        className="lg:w-1/2 md:w-full"
+      >
+        <Carousel setCurrentBranch={setCurrentBranch} />
+      </motion.div>
     </div>
   );
 };
