@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
-    "next": "latest",
+    "next": "^13.5.4",
     "react": "latest",
     "react-dom": "latest",
+    "react-markdown": "^9.0.0",
     "swiper": "^10.3.1"
   },
   "devDependencies": {

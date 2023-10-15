@@ -1,10 +1,10 @@
 import { NavBar } from "@/components/NavBar";
-import { News } from "@/components/News";
+import { Blog } from "@/components/Blog";
 export default function Page({ params }) {
   return (
     <main className="overflow-hidden">
       <NavBar />
-      <News />
+      <Blog />
     </main>
   );
 }

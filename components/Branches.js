@@ -61,7 +61,6 @@ export const Branches = () => {
     if (isInView) {
       mainControls.start("visible");
     } else {
-      mainControls.start("hidden");
     }
   }, [isInView]);
 
@@ -70,8 +69,8 @@ export const Branches = () => {
   };
 
   return (
-    <div className="mx-auto  flex max-w-lg flex-col px-4 py-20 lg:max-w-screen-xl lg:flex-row ">
-      <div ref={ref} className="mb-10 max-w-lg lg:mb-0 lg:pr-16 xl:pr-20">
+    <div className="mx-auto flex max-w-lg flex-col px-4 py-20 lg:max-w-screen-xl lg:flex-row ">
+      <div ref={ref} className="mb-0 max-w-lg lg:mb-0 lg:pr-16 xl:pr-20">
         <motion.div
           variants={textVariant}
           initial="hidden"
