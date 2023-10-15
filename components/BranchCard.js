@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 export const BranchCard = ({ branchName, branchLocation }) => {
@@ -28,14 +28,17 @@ export const BranchCard = ({ branchName, branchLocation }) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} className="flex flex-col  border shadow-sm rounded-xl ">
+    <div
+      ref={ref}
+      className="flex flex-col  border shadow-sm rounded-xl bg-green-500"
+    >
       <motion.div
         variants={textVariant}
         initial="hidden"
         animate={mainControls}
         className="p-4 md:p-5"
       >
-        <h3 className="text-lg text-center font-bold text-gray-600">
+        <h3 className="text-lg text-center font-bold text-white">
           {branchName}
         </h3>
         <div className="flex flex-row flex-nowrap justify-center items-center">

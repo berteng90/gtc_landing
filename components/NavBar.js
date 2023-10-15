@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const NavBar = () => {
   return (
     <div className="overflow-x-hidden">
       <header className="text-green-500 relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 lg:mx-auto lg:flex-row lg:items-center">
-        <a
-          href="#"
+        <Link
+          href={"/"}
           className="flex items-center whitespace-nowrap text-xl font-black"
         >
           <span className="mr-2 w-8">
@@ -19,7 +19,7 @@ export const NavBar = () => {
             />
           </span>
           GoodFarms Trading Corp.
-        </a>
+        </Link>
         <input type="checkbox" className="peer hidden" id="navbar-open" />
         <label
           className="absolute top-5 right-5 cursor-pointer lg:hidden"

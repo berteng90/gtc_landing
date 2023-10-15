@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Branches } from "@/components/Branches";
 import { Statistics } from "@/components/Statistics";
 import { Services } from "@/components/Services";
-import { News } from "@/components/News";
+import { NewsCard } from "@/components/NewsCard";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Branches />
       <Statistics />
       <Services />
-      <News />
+      <NewsCard />
       <Footer />
     </main>
   );
