@@ -22,7 +22,6 @@ export const NewsCard = () => {
           quam.
         </p>
       </div>
-
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
         <motion.div
           variants={blogVariant}
@@ -136,7 +135,7 @@ export const NewsCard = () => {
             <p className="text-gray-600">Want to read more?</p>
             <a
               className="inline-flex items-center gap-x-1.5 text-green-500 decoration-2 hover:underline font-medium"
-              href="../docs/index.html"
+              href="/"
             >
               Go here
               <svg
