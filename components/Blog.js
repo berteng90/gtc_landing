@@ -2,7 +2,7 @@ import { SideBar } from "./SideBar";
 export const Blog = () => {
   return (
     <>
-      <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto pt-24">
+      <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto pt-16">
         <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6 ">
           <div className="lg:col-span-2">
             <div className="py-8 lg:pr-4 ">
@@ -85,8 +85,6 @@ export const Blog = () => {
 
                 <div className="grid lg:flex lg:justify-end lg:items-center gap-y-5 lg:gap-y-0">
                   <div className="flex justify-end items-center gap-x-1.5">
-                    <div className="block h-3 border-r border-gray-300 mx-1.5 dark:border-gray-600"></div>
-
                     <div className="hs-dropdown relative inline-flex">
                       <a
                         className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline hover:text-green-500"
