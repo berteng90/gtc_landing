@@ -11,11 +11,11 @@ const branches = [
   },
   {
     branch: "GTC Maramag",
-    location: "Purok-1 South Poblacion, Maramag, Bukidnon",
+    location: "Purok 1 South Poblacion, Maramag, Bukidnon",
   },
   {
     branch: "GTC Quezon",
-    location: "Quezon, Bukidnon",
+    location: "Purok 4B Balangay, Quezon, Bukidnon",
   },
   {
     branch: "GTC Tablon",

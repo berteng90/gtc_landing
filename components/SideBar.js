@@ -1,8 +1,8 @@
 export const SideBar = () => {
   return (
-    <div className="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-slate-800">
+    <div className="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent ">
       <div className="sticky top-0 left-0 py-8 lg:pl-4">
-        <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-gray-700">
+        <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 ">
           <div className="grow">
             <div className="flex justify-center">
               <h1 className="font-bold text-green-500 text-2xl">
@@ -15,7 +15,7 @@ export const SideBar = () => {
         <div className="space-y-6">
           <a className="group flex items-center gap-x-6" href="#">
             <div className="grow">
-              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500 dark:text-gray-200 dark:group-hover:text-blue-500">
+              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500 ">
                 5 Reasons to Not start a UX Designer Career in 2022/2023
               </span>
             </div>
@@ -31,7 +31,7 @@ export const SideBar = () => {
 
           <a className="group flex items-center gap-x-6" href="#">
             <div className="grow">
-              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500 dark:text-gray-200 dark:group-hover:text-blue-500">
+              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500 ">
                 If your UX Portfolio has this 20% Well Done, it Will Give You an
                 80% Result
               </span>
@@ -48,7 +48,7 @@ export const SideBar = () => {
 
           <a className="group flex items-center gap-x-6" href="#">
             <div className="grow">
-              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500 dark:text-gray-200 dark:group-hover:text-blue-500">
+              <span className="text-sm font-bold text-gray-800 group-hover:text-green-500">
                 7 Principles of Icon Design
               </span>
             </div>
