@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import Link from "next/link";
 export const Hero = () => {
   const heroVariants = {
     hidden: {
@@ -47,20 +47,22 @@ export const Hero = () => {
             </motion.h1>
 
             <div className="group relative mt-10 inline-flex">
-              <motion.a
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 1,
-                  type: "spring",
-                  duration: 0.5,
-                }}
-                href="#"
-                title=""
-                className="rounded-xl bg-green-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
-              >
-                Get Started
-              </motion.a>
+              <Link href={"/registration"}>
+                <motion.div
+                  initial={{ y: 30, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 1,
+                    type: "spring",
+                    duration: 0.5,
+                  }}
+                  href="#"
+                  title=""
+                  className="rounded-xl bg-green-500 px-10 py-3 font-medium text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 hover:bg-amber-300"
+                >
+                  Get Started
+                </motion.div>
+              </Link>
               <div className="-scale-x-100 absolute left-0 -bottom-10 hidden h-10 w-10 -rotate-12 text-gray-500 md:inline-flex">
                 <motion.svg
                   initial={{ y: 60, opacity: 0 }}

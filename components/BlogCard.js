@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 export const BlogCard = ({ title, image, date, url, alt }) => {
   const blogVariant = {
     hidden: { opacity: 0, x: "-50vw" },
@@ -18,7 +19,9 @@ export const BlogCard = ({ title, image, date, url, alt }) => {
     >
       <Link href={url}>
         <div className="aspect-w-16 aspect-h-9">
-          <img
+          <Image
+            width={500}
+            height={500}
             className="w-full h-96 object-cover rounded-t-xl"
             src={image}
             alt={alt}
