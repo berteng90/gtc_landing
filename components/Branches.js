@@ -69,8 +69,8 @@ export const Branches = () => {
   };
 
   return (
-    <div className="mx-auto flex max-w-lg flex-col px-4 py-20 lg:max-w-screen-xl lg:flex-row ">
-      <div ref={ref} className="mb-0 max-w-lg lg:mb-0 lg:pr-16 xl:pr-20">
+    <div className="mx-auto flex max-w-lg flex-col px-4 py-20   lg:max-w-screen-lg lg:flex-col lg:items-center">
+      <div ref={ref} className="mb-0  lg:mb-0 lg:pr-16 xl:pr-20">
         <motion.div
           variants={textVariant}
           initial="hidden"
@@ -103,7 +103,9 @@ export const Branches = () => {
         animate={mainControls}
         className="lg:w-1/2 md:w-full"
       >
-        <Carousel setCurrentBranch={setCurrentBranch} />
+        <div>
+          <Carousel setCurrentBranch={setCurrentBranch} />
+        </div>
       </motion.div>
     </div>
   );
