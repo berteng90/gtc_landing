@@ -69,17 +69,17 @@ export const Branches = () => {
   };
 
   return (
-    <div className="mx-auto flex max-w-lg flex-col px-4 py-20   lg:max-w-screen-lg lg:flex-col lg:items-center">
+    <div className="mx-auto flex max-w-lg flex-col px-4 py-20  lg:max-w-screen-lg lg:flex-col lg:items-center lg:justify-center">
       <div ref={ref} className="mb-0  lg:mb-0 lg:pr-16 xl:pr-20">
         <motion.div
           variants={textVariant}
           initial="hidden"
           animate={mainControls}
-          className="mb-10 text-4xl text-green-500 font-light"
+          className="  mb-10 text-4xl text-green-500 font-light"
         >
           <div>
             <div className="rounded bg-amber-300 p-8 ">
-              <h1 className="text-green-500 ">
+              <h1 className="text-green-500 font-bold text-4xl text-center">
                 Trusted by Farmers All-Over
                 <span className="font-bold"> Mindanao!</span>
               </h1>
@@ -89,23 +89,26 @@ export const Branches = () => {
             <div className="mx-auto h-2 w-9/12 rounded-b bg-amber-500 opacity-25"></div>
           </div>
         </motion.div>
-        <div className="mb-5 text-gray-600">
+        <motion.div
+          variants={textVariant}
+          initial="hidden"
+          animate={mainControls}
+          className="mb-5 text-gray-600"
+        >
           <BranchCard
             branchName={branches[currBranch].branch}
             branchLocation={branches[currBranch].location}
           />
-        </div>
+        </motion.div>
       </div>
       <motion.div
         ref={ref}
         variants={textVariant}
         initial="hidden"
         animate={mainControls}
-        className="lg:w-1/2 md:w-full"
+        className="lg:w-full md:w-full"
       >
-        <div>
-          <Carousel setCurrentBranch={setCurrentBranch} />
-        </div>
+        <Carousel setCurrentBranch={setCurrentBranch} />
       </motion.div>
     </div>
   );

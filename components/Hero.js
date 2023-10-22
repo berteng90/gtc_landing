@@ -12,10 +12,10 @@ export const Hero = () => {
     },
   };
   return (
-    <div className="max-w-[85rem] mx-auto">
+    <div className="max-w-[85rem] mx-auto  lg:mt-20 xl:mt-20 ">
       <div className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
         <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-green-400 blur-xl opacity-80"></span>
-        <span className="absolute left-4 top-12 w-24 h-24 rounded-3xlrotate-90 skew-x-12 rounded-3xl bg-amber-300 blur-xl"></span>
+        <span className="absolute left-4 top-12 w-24 h-24 rounded-3xlrotate-90  rounded-3xl bg-amber-300 blur-xl"></span>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -94,7 +94,7 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 mb-16 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
+      <div className="mt-16 flex flex-col items-center justify-center divide-y divide-gray-300 sm:flex-row sm:divide-x sm:divide-y-0 md:mt-20">
         <motion.div
           initial={{ x: "-60vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

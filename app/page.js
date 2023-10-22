@@ -8,7 +8,7 @@ import { BlogSection } from "@/components/BlogSection";
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-hidden">
+    <main className="flex flex-col min-h-screen overflow-hidden">
       <NavBar />
       <Hero />
       <Branches />

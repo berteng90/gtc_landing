@@ -41,11 +41,8 @@ export const Statistics = () => {
 
   return (
     <section className="flex mx-auto relative overflow-hidden bg-gray-100 py-12 sm:py-16 lg:py-20 lg:max-w-screen-xl">
-      <div className="absolute h-72 w-72 scale-125 -right-8 -bottom-10">
-        <div className="absolute h-60 w-60 rounded-2xl border-4 border-amber-300"></div>
-        <div className="absolute h-60 w-60 translate-x-3 translate-y-3 rounded-2xl border-4 border-amber-300"></div>
-        <div className="absolute h-60 w-60 translate-x-6 translate-y-6 rounded-2xl border-4 border-amber-300"></div>
-      </div>
+      <span className="absolute right-2 bottom-4 w-36 h-36 rounded-3xl bg-green-400 blur-xl "></span>
+      <span className="absolute left-2 top-4 w-36 h-36 rounded-3xlrotate-90  rounded-3xl bg-amber-300 blur-xl"></span>
       <div ref={ref} className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-3xl font-semibold leading-7 text-green-500 sm:text-4xl xl:text-5xl">
