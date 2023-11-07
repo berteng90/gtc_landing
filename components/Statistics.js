@@ -33,16 +33,14 @@ export const Statistics = () => {
 
   const formatNumberOfFamilies = (families) => {
     if (families < 1000) {
-      return families.toString(); // No formatting needed
+      return families.toString();
     } else {
-      return families.toLocaleString(); // Use toLocaleString for formatting
+      return families.toLocaleString();
     }
   };
 
   return (
     <section className="flex mx-auto relative overflow-hidden bg-gray-100 py-12 sm:py-16 lg:py-20 lg:max-w-screen-xl">
-      <span className="absolute right-2 bottom-4 w-36 h-36 rounded-3xl bg-green-400 blur-xl "></span>
-      <span className="absolute left-2 top-4 w-36 h-36 rounded-3xlrotate-90  rounded-3xl bg-amber-300 blur-xl"></span>
       <div ref={ref} className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-3xl font-semibold leading-7 text-green-500 sm:text-4xl xl:text-5xl">

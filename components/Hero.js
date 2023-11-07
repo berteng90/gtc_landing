@@ -8,14 +8,25 @@ export const Hero = () => {
     },
     visible: {
       opacity: 1,
-      transition: { delay: 0.1, duration: 1.3 },
+      transition: { duration: 1 },
     },
   };
+
   return (
     <div className="max-w-[85rem] mx-auto  lg:mt-20 xl:mt-20 ">
       <div className="relative py-12 sm:py-16 lg:pt-20 xl:pb-0">
-        <span className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-green-400 blur-xl opacity-80"></span>
-        <span className="absolute left-4 top-12 w-24 h-24 rounded-3xlrotate-90  rounded-3xl bg-amber-300 blur-xl"></span>
+        <motion.span
+          variants={heroVariants}
+          initial="hidden"
+          animate="visible"
+          className="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-green-400 blur-xl opacity-80"
+        ></motion.span>
+        <motion.span
+          variants={heroVariants}
+          initial="hidden"
+          animate="visible"
+          className="absolute left-4 top-12 w-24 h-24 rounded-3xlrotate-90  rounded-3xl bg-amber-300 blur-xl"
+        ></motion.span>
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
@@ -49,12 +60,12 @@ export const Hero = () => {
             <div className="group relative mt-10 inline-flex">
               <Link href={"/registration"}>
                 <motion.div
-                  initial={{ y: 30, opacity: 0 }}
+                  initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: 1,
                     type: "spring",
-                    duration: 0.5,
+                    delay: 0.3,
+                    duration: 0.3,
                   }}
                   href="#"
                   title=""
@@ -65,11 +76,11 @@ export const Hero = () => {
               </Link>
               <div className="-scale-x-100 absolute left-0 -bottom-10 hidden h-10 w-10 -rotate-12 text-gray-500 md:inline-flex">
                 <motion.svg
-                  initial={{ y: 60, opacity: 0 }}
+                  initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: 1.5,
                     type: "spring",
+                    delay: 0.6,
                     duration: 1,
                   }}
                   viewBox="0 0 82 35"
@@ -98,7 +109,7 @@ export const Hero = () => {
         <motion.div
           initial={{ x: "-60vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.3, duration: 1.1 }}
+          transition={{ delay: 0.5, duration: 1 }}
           className="flex max-w-xs space-x-2 px-4 py-4"
         >
           <svg
@@ -122,7 +133,7 @@ export const Hero = () => {
         <motion.div
           initial={{ x: "-40vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1.1 }}
+          transition={{ delay: 0.5, duration: 1 }}
           className="flex max-w-xs space-x-2 px-4 py-4"
         >
           <svg
@@ -146,7 +157,7 @@ export const Hero = () => {
         <motion.div
           initial={{ x: "-20vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.1, duration: 1.1 }}
+          transition={{ delay: 0.5, duration: 1 }}
           className="flex max-w-xs space-x-2 px-4 py-4"
         >
           <svg

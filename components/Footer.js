@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 shadow-gray-500 shadow-md">
@@ -5,7 +6,12 @@ export const Footer = () => {
         <div className="max-w-sm">
           <div className="mb-6 flex h-12 items-center space-x-2">
             <span className="mr-2 w-8">
-              <img src="/Goodfarms Logo.svg" alt="GoodFarms Logo" />
+              <Image
+                width={50}
+                height={50}
+                src="/Goodfarms Logo.svg"
+                alt="GoodFarms Logo"
+              />
             </span>
             <span className="text-m font-bold">
               <span className="text-green-600">GoodFarms Trading Corp</span>.
