@@ -2,13 +2,13 @@ import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
 import { Branches } from "@/components/Branches";
-import { Statistics } from "@/components/Statistics";
 import { Services } from "@/components/Services";
 import { BlogSection } from "@/components/BlogSection";
+import { Statistics } from "@/components/Statistics";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen overflow-hidden">
+    <main className="flex flex-col min-h-screen overflow-hidden ">
       <NavBar />
       <Hero />
       <Branches />
